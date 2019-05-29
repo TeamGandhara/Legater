@@ -1,0 +1,246 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.1.4, 27 July 2018) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons 
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+% Sidemarginer osv.
+\geometry{
+left=1cm,
+right=10cm,
+marginparwidth=6.8cm,
+marginparsep=1.2cm,
+top=1.25cm,
+bottom=1.25cm,
+footskip=2\baselineskip}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+\usepackage{comment}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Sepia}
+\colorlet{accent}{Mulberry}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\usepackage[colorlinks]{hyperref}
+
+\begin{document}
+
+\name{Barakat Bokharaie}
+\tagline{Mechanical engineering trainee at \textit{The European Organization for Nuclear Research}}
+\photo{3cm}{mig.png}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{barakat@live.dk }
+  %\email{barakat-ullah.bokharaie@cern.ch}
+  \phone{+45 71511210}
+  %\mailaddress{Elambilakkal(Hose),Calicut airport(Po),Kondotty, Malappuram }
+  \location{Sergy, France}
+  %\homepage{www.homepage.com}
+  %\twitter{@twitterhandle}
+  \linkedin{www.linkedin.com/in/barbok}
+  %\github{github.com/yourid}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+%   \orcid{orcid.org/0000-0000-0000-0000}
+}
+
+%% Make the header extend all the way to the right, if you want. 
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth} \vspace{-0.5cm}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Profile}
+Mechanical engineering undergraduate passionate about materials science and mechanical design. Highly-capable leader and team worker from several semester projects. Proficient in a range of engineering disciplines such as strength calculations, FE Analysis and Java.  
+
+\cvsection{Work Experience}
+
+\cvevent{\textbf{Mechanical engineering trainee}}{The European Organization for Nuclear Research}{February 2019 -- Ongoing}{Meyrin, Switzerland}
+\begin{itemize}
+\item Generating finite-element based transient simulation models for the \textit{High Luminosity Large Hadron Collider (HL-LHC)}
+\item Increase efficiency of simulation work flow
+\item Developing and analyzing Quench Protection Systems
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Student assisstant}}{Aarhus University School of Engineering}{August 2018 -- January 2019}{Aarhus, Denmark}
+\begin{itemize}
+\item Review exam exercises in the course of \textit{Dynamics}
+\item Correct and grade assignments in the couse of \textit{Finite Element Analysis}
+\item Assembly and maintenance of \textit{blueROV2} water robots
+\item Arranging and executing workshop for high school students with blueROV2 robots
+\end{itemize}
+
+
+\divider
+
+\cvevent{\textbf{Sales assistant}}{Løvbjerg Supermarket A/S}{August 2018 -- January 2019}{Nykøbing Mors and Aarhus, Denmark}
+\begin{itemize}
+\item Initially a service employee and then cashier
+\item Then promoted to manager of the frozen goods department. Responsible for ordering and ﬁlling of day-to-day products and cutprice
+goods and minding the sales statistics
+\end{itemize}
+
+\divider
+
+\cvevent{Substitute teacher}{Dueholmskolen (Local elementary school) }{April 2010 -- Februaru 2017}{Nykøbing Mors, Denmark}
+\begin{itemize}
+\item Substitute teacher in all grades of 1\textsuperscript{st} through 9\textsuperscript{th} grade
+\end{itemize}
+
+\cvsection{References}
+
+% \cvref{name}{email}{mailing address}
+
+%\cvref{Asst. Prof.\ Torben Almskou}{Aarhus University}{toa@ase.au.dk}
+%{Inge Lehmanns Gade 10\\8000 Aarhus C}
+
+
+\begin{minipage}[b]{0.5\textwidth}
+\cvref{Asst. Prof.\ Torben Almskou}{Aarhus University}{toa@ase.au.dk}
+{Inge Lehmanns Gade 10\\8000 Aarhus C}
+\end{minipage}\hfill
+\begin{minipage}[b]{0.5\textwidth}
+\cvref{Dr. Ir.\ Matthias Mentink}{CERN}{matthias.mentink@cern.com}
+{Espl. des Particules 1\\Meyrin, Switzerland}
+\end{minipage}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{comment}
+\cvsection{Completed Projects}
+
+\cvevent{Project 1}{Funding agency/institution}{Project duration}{}
+\begin{itemize}
+\item Details
+\end{itemize}
+
+\divider
+
+\cvevent{Project 2}{Funding agency/institution}{Project duration}{}
+A short abstract would also work.
+
+\medskip
+
+\cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+\wheelchart{1.5cm}{0.5cm}{%
+  6/8em/accent!30/{Sleep,\\beautiful sleep}, 
+  4/8em/accent!8/{Watching news},
+  3/7em/accent!8/Meeting &Talking with friends,
+  8/8em/accent!55/Day time Job,
+  2/10em/accent!10/Sports and relaxation,
+  5/6em/accent!20/Spending time with family
+}
+\end{comment}
+
+\begin{comment}
+\clearpage
+\cvsection[page2sidebar]{Publications}
+
+\nocite{*}
+
+\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+\divider
+
+\printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}},type=article]
+
+\divider
+
+\printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the 
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+\end{comment}
+\end{document}
